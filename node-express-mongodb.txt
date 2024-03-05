@@ -1,0 +1,15 @@
+B1: Cài docker desktop và đăng nhập trên hubDocker
+B2 Tạo Dockerfile trong thư mục chứa dự án
+B3: Build a container 
+-Tại thư mục dự án
+docker build -t blog-app .
+-Thành công => xuất hiện container trong docker desktop
+B4: Chạy container vừa tạo => tạo ra image ở local
+B5: chuyển image từ local=> hub 
+- terminal
+docker images
+docker tag blog-app:latest lequangdat300901/blog-app:latest
+docker push lequangdat300901/blog-app
+
+dòng lệnh thứ 2 phải đặt tên theo quy tắc myusername / myapp
+B6: Kiểm tra lại trên images hub và theo dõi trên hub.docker.com
